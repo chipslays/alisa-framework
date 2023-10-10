@@ -3,5 +3,5 @@
 ## Установка
 
 ```bash
-composer create-project alisa/project example-skill --prefer-dist
+composer create-project alisa/project example-skill
 ```
