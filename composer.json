@@ -1,0 +1,29 @@
+{
+    "name":"alisa/framework",
+    "description":"Навык для голосового помощника Алисы.",
+    "type":"project",
+    "keywords":[
+       "yandex",
+       "dialogs",
+       "alisa",
+       "api",
+       "project",
+       "framework"
+    ],
+    "license":"MIT",
+    "require":{
+       "php":"^8.0",
+       "alisa/alisa":"@beta"
+    },
+    "require-dev":{
+       "symfony/var-dumper":"^6.3"
+    },
+    "autoload":{
+       "psr-4":{
+          "App\\":"app/"
+       },
+       "files":[
+          "helpers.php"
+       ]
+    }
+ }
