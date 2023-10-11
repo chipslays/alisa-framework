@@ -7,8 +7,8 @@ use Alisa\Http\Controller;
 
 class StartController extends Controller
 {
-    public function __invoke(Context $alisa)
+    public function __invoke(Context $ctx)
     {
-        $alisa->reply('Прив+ет, {pause:250} мир!');
+        $ctx->reply('Прив+ет, {pause:250} мир!');
     }
 }
