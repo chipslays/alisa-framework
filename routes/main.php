@@ -2,4 +2,4 @@
 
 /** @var \Alisa\Skill $app */
 
-$app->onStart([\App\Controllers\StartController::class, 'start']);
+$app->onStart(\App\Controllers\StartController::class);
