@@ -3,5 +3,5 @@
 ## Установка
 
 ```bash
-composer create-project alisa/project example-skill
+composer create-project alisa/framework example-skill
 ```
