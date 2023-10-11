@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'example' => \Alisa\Routing\Middleware::class,
+    'example' => \App\Middlewares\ExampleMiddleware::class,
 ];
