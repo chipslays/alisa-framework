@@ -9,6 +9,7 @@ return new class {
         if (!$schema->hasTable('users')) {
             $schema->create('users', function (Blueprint $table) {
                 $table->string('id')->primary()->unique()->index();
+                $table->boolean('is_guest')->default(true);
                 $table->json('options')->nullable();
                 $table->timestamps();
             });
