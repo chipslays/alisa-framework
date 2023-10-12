@@ -9,5 +9,7 @@ return [
 
     'images' => __DIR__ . '/../storage/images',
 
+    'auto_repeat' => true,
+
     'event' => null,
 ];
