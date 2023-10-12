@@ -1,6 +1,6 @@
 <?php
 
-define('ALISA_START', time());
+define('ALISA_START', microtime(true));
 
 require __DIR__ . '/../vendor/autoload.php';
 

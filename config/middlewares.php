@@ -1,5 +1,6 @@
 <?php
 
 return [
-    'example' => \App\Middlewares\ExampleMiddleware::class,
+    // \App\Middlewares\ExampleMiddleware::class,
+    \App\Middlewares\LogMiddleware::class,
 ];
