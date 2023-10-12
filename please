@@ -1,0 +1,40 @@
+#!/usr/bin/php
+
+<?php
+
+switch ($argv[1] ?? null) {
+    case 'migrate:up':
+        require __DIR__ . '/database/Migrator.php';
+
+        Migrator::up();
+
+        break;
+
+    case 'migrate:down':
+        require __DIR__ . '/database/Migrator.php';
+
+        $confirm = readline('Действительно удалить все таблицы? [y/N]: ');
+
+        if ($confirm && strtolower($confirm) === 'y') {
+            Migrator::down();
+        }
+
+        break;
+
+    case 'migrate:fresh':
+        require __DIR__ . '/database/Migrator.php';
+
+        $confirm = readline('Вы уверены? [y/N]: ');
+
+        if ($confirm && strtolower($confirm) === 'y') {
+            Migrator::fresh();
+        }
+
+        break;
+
+    default:
+        echo "Commands:" . PHP_EOL;
+        echo "  - php please migrate:up" . PHP_EOL;
+        echo "  - php please migrate:down" . PHP_EOL;
+        break;
+}
