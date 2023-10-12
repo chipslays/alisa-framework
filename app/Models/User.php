@@ -33,7 +33,7 @@ class User extends Model
         $guest = false;
 
         if (!$userId) {
-            $userId = $app->request()->get('session.application_id.application_id');
+            $userId = $app->request()->get('session.application.application_id');
             $guest = true;
         }
 
